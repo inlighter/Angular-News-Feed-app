@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>CUSTOM NEWS</h1>
+    </div>
+    <div class="col-sm-2 col-sm-offset-2">
+      <button *ngIf="customArticles.length" class="btn btn-primary clear-btn" (click)="removeAll()">Remove All</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-4 col-sm-6" *ngFor="let article of customArticles">
+      <news-custom [news]="article"></news-custom>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">ngNews</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li>
+          <a [routerLink]="['/news']" routerLinkActive="active">News</a>
+        </li>
+        <li><a [routerLink]="['/create']" routerLinkActive="active">Create News</a></li>
+        <li><a [routerLink]="['/saved']" routerLinkActive="active">Saved News</a></li>
+        <li><a [routerLink]="['/custom']" routerLinkActive="active">Custom News</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>

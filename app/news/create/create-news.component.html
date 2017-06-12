@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>CREATE NEW ARTICLE</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form #createArticleForm="ngForm" (ngSubmit)="add(createArticleForm.value)" autocomplete="off">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input id="title" (ngModel)="customArticle.title" type="text" class="form-control" name="title" placeholder="Title..">
+        </div>
+        <div class="form-group">
+          <label for="article">News content:</label>
+          <textarea id="article" (ngModel)="article" type="text" class="form-control" name="article" placeholder="Text.."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="button" class="btn btn-default" (click)="cancel()">Cancel</button>
+      </form>
+    </div>
+  </div>
+</div>

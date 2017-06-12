@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>SAVED NEWS</h1>
+    </div>
+    <div class="col-sm-2 col-sm-offset-2">
+      <button *ngIf="articles.length" class="btn btn-primary clear-btn" (click)="clear()">Clear Storage</button>
+    </div>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6" *ngFor="let article of articles">
+      <news-nextweb (eventClick)="updateSavedArticles()" [isSaved]="true" *ngIf="article.source === 'the-next-web'" [news]="article"></news-nextweb>
+      <news-techradar (eventClick)="updateSavedArticles()" [isSaved]="true" *ngIf="article.source === 'techradar'" [news]="article"></news-techradar>
+      <news-techcrunch (eventClick)="updateSavedArticles()" [isSaved]="true" *ngIf="article.source === 'techcrunch'" [news]="article"></news-techcrunch>
+      <news-custom (eventClick)="updateSavedArticles()" [isSaved]="true" *ngIf="article.source === 'custom'" [news]="article"></news-custom>
+    </div>
+  </div>
+</div>

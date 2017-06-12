@@ -1,0 +1,41 @@
+.well div {
+    color: #bbb;
+    
+}
+.hoverwell {
+    cursor: auto ;
+}
+.story {
+    height: 278px;
+    overflow: hidden;
+}
+.story-image {
+    display: block;
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.story-btn {
+    position: absolute;
+    top: 222px;
+}
+
+img {
+    
+    width: 100%;
+    
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+a h4 {
+    font-size: 14px;
+    line-height: 18px;
+}
