@@ -25,6 +25,6 @@ Application should consist of the following pages
   <li>Page for added news with ability to go to detailed view and delete news entry.</li>
 </ol>
 
-Here you can find source .ts files which have been used to create and deploy a <a target="_blank" href="https://inlighter.github.io/Portfolio/Demo/">Demo</a>
+Here you can find source .ts files which have been used to create and deploy a <a target="_blank" href="https://inlighter.github.io/Portfolio/News/">Demo</a>
 
 News-details cards have been duplicated bacause of requirements (place for future optimization).
