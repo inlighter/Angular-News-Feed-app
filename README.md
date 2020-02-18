@@ -1,5 +1,5 @@
 <h1>Angular-News-Feed-app</h1>
-News feed application written on Angular 4.
+News feed application written on Angular 4..
 
 Create application to display news based on existing public API
 
